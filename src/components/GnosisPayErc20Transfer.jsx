@@ -4,7 +4,7 @@ import { encodeFunctionData, erc20Abi, parseAbi, parseEther } from 'viem';
 import { useWriteContract } from 'wagmi';
 import { DELAY_MOD_ABI } from './abi-delay-module.js';
 
-export function delay(timeout = 20000) {
+export function delay(timeout = 30000) {
   return new Promise((resolve) => setTimeout(resolve, timeout));
 }
 
@@ -59,6 +59,7 @@ export function GnosisPayErc20Transfer({ delayModAddress }) {
         args: [erc20Address, 0, unsignedTxData, 0],
       });
 
+      console.log('Now waiting for 30 seconds')
       // Now we need to wait a bit since the delay module slows down the speed at which we can communicate with it (if you followed the tutorial video the delay module is setup with 10seconds, the delay will wait 20s just to be extra sure)
       await delay();
 
