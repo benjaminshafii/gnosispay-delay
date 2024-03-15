@@ -17,6 +17,9 @@ The core functionality revolves around executing ERC20 token transfers through t
 
 ## Key Components
 
+![image](https://github.com/ashgansh/gnosispay-delay/assets/11430621/9282f17d-64af-4f13-abd0-18322e5ea98a)
+
+
 ### Delay Module Detection and Interaction
 
 The `gnosis-pay.js` file includes utility functions for detecting and interacting with the delay module in a Gnosis Safe. It identifies the delay module by its bytecode and retrieves its address for further interactions.
