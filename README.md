@@ -1,6 +1,15 @@
 # Gnosis Pay Delay Module Demo
 
-This repository contains a demonstration of how to interact with the Gnosis Pay Delay Module using a React application. The Gnosis Pay Delay Module is a smart contract that adds a delay to transactions, enhancing security by allowing time to react to unauthorized transactions before they are executed.
+This repository contains a demonstration of how to interact with the Gnosis Pay Delay Module using a React application. The Gnosis Pay Delay Module is a smart contract that adds a delay to transactions.
+
+
+## How to Run
+
+```bash
+npm install
+npm dev
+```
+
 
 ## Overview
 
